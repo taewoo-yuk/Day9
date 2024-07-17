@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAN</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <header><h1 class="header_h1">Memo App Note</h1></header>
+  <body>
+    <form id="form_memo">
+      <div class="list"></div>
+      <div>
+        <input
+          type="text"
+          name="input_memo"
+          id="input_memo"
+          placeholder="메모를 입력해주세요."
+        />
+        <button id="memoButton" data-key="Enter">저장</button>
+      </div>
+    </form>
+  </body>
+  <footer>
+    <div class="footer_memo">
+      <button onclick="getMemos('ASC')">가나다순 정렬</button>
+      <button onclick="getMemos('DESC')">가나다 역순 정렬</button>
+      <button onclick="getMemos('TIME_ASC')">오래된순 정렬</button>
+      <button onclick="getMemos('TIME_DESC')">최신순 정렬</button>
+    </div>
+  </footer>
+  <script src="./app.js"></script>
+</html>
